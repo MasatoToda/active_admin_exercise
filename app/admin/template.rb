@@ -3,6 +3,8 @@ ActiveAdmin.register Template do
     render :text => "app/admin/template/test 表示成功"
   end
 
+  permit_params :name, :title, :text
+
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
