@@ -1055,3 +1055,22 @@ Processing by Admin::TemplatesController#new as HTML
   [1m[36mUser Load (1.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
   Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/new.html.arb (516.9ms)
 Completed 200 OK in 584ms (Views: 543.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/dashboard" for ::1 at 2015-08-03 14:16:09 +0900
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/page/index.html.arb (430.1ms)
+Completed 200 OK in 524ms (Views: 441.6ms | ActiveRecord: 32.8ms)
+
+
+Started GET "/admin/templates" for ::1 at 2015-08-03 14:16:12 +0900
+Processing by Admin::TemplatesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `templates`
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mTemplate Load (0.4ms)[0m  SELECT  `templates`.* FROM `templates`  ORDER BY `templates`.`id` desc LIMIT 30 OFFSET 0
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/index.html.arb (408.8ms)
+Completed 200 OK in 493ms (Views: 431.6ms | ActiveRecord: 43.7ms)
