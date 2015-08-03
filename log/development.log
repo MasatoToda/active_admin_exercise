@@ -1074,3 +1074,106 @@ Processing by Admin::TemplatesController#index as HTML
   [1m[35mTemplate Load (0.4ms)[0m  SELECT  `templates`.* FROM `templates`  ORDER BY `templates`.`id` desc LIMIT 30 OFFSET 0
   Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/index.html.arb (408.8ms)
 Completed 200 OK in 493ms (Views: 431.6ms | ActiveRecord: 43.7ms)
+
+
+Started GET "/admin/templates" for ::1 at 2015-08-03 15:06:41 +0900
+Processing by Admin::TemplatesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (12.5ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `templates`
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mTemplate Load (0.4ms)[0m  SELECT  `templates`.* FROM `templates`  ORDER BY `templates`.`id` desc LIMIT 30 OFFSET 0
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/index.html.arb (588.4ms)
+Completed 200 OK in 969ms (Views: 624.4ms | ActiveRecord: 184.3ms)
+
+
+Started GET "/admin/templates/new" for ::1 at 2015-08-03 15:07:09 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (21.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::TemplatesController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/new.html.arb (1721.5ms)
+Completed 200 OK in 1871ms (Views: 1746.4ms | ActiveRecord: 58.6ms)
+
+
+Started POST "/admin/templates" for ::1 at 2015-08-03 15:07:30 +0900
+Processing by Admin::TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wGlpni7ZSom3uRd5lbZUM/38lhJNPPQVdd87lbcA6hKTKeqr3Hl+OzeNPjLkRE10wMKymw3qgsv7/gmTyWQtZg==", "template"=>{"name"=>"validation", "title"=>"vd", "text"=>""}, "commit"=>"Create Template"}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (20.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/new.html.arb (379.7ms)
+Completed 200 OK in 633ms (Views: 400.5ms | ActiveRecord: 21.8ms)
+
+
+Started POST "/admin/templates" for ::1 at 2015-08-03 15:07:41 +0900
+Processing by Admin::TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AvrG7XnsFJM41NdOJO8a1ANfER23pAmacrJNSyu3gNVRukXYi0wgIbjg/gVVHQOTPmE1lPdyf0T8k39NVdNHoQ==", "template"=>{"name"=>"validation", "title"=>"", "text"=>"vd"}, "commit"=>"Create Template"}
+  [1m[35mUser Load (5.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (2.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (7.3ms)[0m  ROLLBACK
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/new.html.arb (279.9ms)
+Completed 200 OK in 426ms (Views: 300.8ms | ActiveRecord: 15.5ms)
+
+
+Started POST "/admin/templates" for ::1 at 2015-08-03 15:07:46 +0900
+Processing by Admin::TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M/m7yUE3Vgs6Iy4Lzf2sbWKF8RnQ9jjeEMZsqWO+3ERguTj8s5diuboXB0C8D7UqX7vVkJAgTgCe516vHdobMA==", "template"=>{"name"=>"validation", "title"=>"vd", "text"=>"vd"}, "commit"=>"Create Template"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (47.1ms)[0m  [1mINSERT INTO `templates` (`name`, `title`, `text`, `created_at`, `updated_at`) VALUES ('validation', 'vd', 'vd', '2015-08-03 06:07:46', '2015-08-03 06:07:46')[0m
+  [1m[35m (7.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin/templates/3
+Completed 302 Found in 146ms (ActiveRecord: 55.9ms)
+
+
+Started GET "/admin/templates/3" for ::1 at 2015-08-03 15:07:46 +0900
+Processing by Admin::TemplatesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mTemplate Load (0.9ms)[0m  SELECT  `templates`.* FROM `templates` WHERE `templates`.`id` = 3 LIMIT 1
+  [1m[36m (11.8ms)[0m  [1mSELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Template' AND `active_admin_comments`.`resource_id` = '3' AND `active_admin_comments`.`namespace` = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Template' AND `active_admin_comments`.`resource_id` = '3' AND `active_admin_comments`.`namespace` = 'admin'  [["resource_type", "Template"], ["resource_id", "3"], ["namespace", "admin"]]
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/show.html.arb (393.4ms)
+Completed 200 OK in 429ms (Views: 391.4ms | ActiveRecord: 27.6ms)
+
+
+Started GET "/admin/templates" for ::1 at 2015-08-03 15:08:05 +0900
+Processing by Admin::TemplatesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (8.1ms)[0m  SELECT COUNT(*) FROM `templates`
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mTemplate Load (0.4ms)[0m  SELECT  `templates`.* FROM `templates`  ORDER BY `templates`.`id` desc LIMIT 30 OFFSET 0
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/index.html.arb (659.4ms)
+Completed 200 OK in 782ms (Views: 667.6ms | ActiveRecord: 63.5ms)
+
+
+Started GET "/admin/templates/new" for ::1 at 2015-08-03 15:08:09 +0900
+Processing by Admin::TemplatesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/new.html.arb (263.2ms)
+Completed 200 OK in 284ms (Views: 279.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/admin/templates" for ::1 at 2015-08-03 15:08:19 +0900
+Processing by Admin::TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jtwIJz91ALJ9hNRQbsIVQFjK4mpgBi47hPvKMzOExg7dnIsSzdU0AP2w/RsfMAwHZfTG4yDQWOUK2vg1TeABeg==", "template"=>{"name"=>"vd", "title"=>"vd", "text"=>""}, "commit"=>"Create Template"}
+  [1m[35mUser Load (7.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO `templates` (`name`, `title`, `text`, `created_at`, `updated_at`) VALUES ('vd', 'vd', '', '2015-08-03 06:08:19', '2015-08-03 06:08:19')
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/templates/4
+Completed 302 Found in 78ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/admin/templates/4" for ::1 at 2015-08-03 15:08:19 +0900
+Processing by Admin::TemplatesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mTemplate Load (0.4ms)[0m  [1mSELECT  `templates`.* FROM `templates` WHERE `templates`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Template' AND `active_admin_comments`.`resource_id` = '4' AND `active_admin_comments`.`namespace` = 'admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Template' AND `active_admin_comments`.`resource_id` = '4' AND `active_admin_comments`.`namespace` = 'admin'[0m  [["resource_type", "Template"], ["resource_id", "4"], ["namespace", "admin"]]
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/show.html.arb (370.6ms)
+Completed 200 OK in 392ms (Views: 386.2ms | ActiveRecord: 1.6ms)
