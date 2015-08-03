@@ -348,3 +348,439 @@ Processing by Admin::TemplatesController#index as HTML
   [1m[35m (1.8ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
   Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/index.html.arb (322.9ms)
 Completed 200 OK in 380ms (Views: 337.6ms | ActiveRecord: 30.3ms)
+  [1m[36m (1.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (13.0ms)[0m  INSERT INTO `templates` (`id`, `name`, `created_at`, `updated_at`) VALUES (1, 'name1', '2015-08-03 00:31:36', '2015-08-03 00:31:36')
+  [1m[36m (5.8ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/admin/templates" for ::1 at 2015-08-03 09:32:35 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::TemplatesController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `templates`[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mTemplate Load (0.4ms)[0m  [1mSELECT  `templates`.* FROM `templates`  ORDER BY `templates`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/index.html.arb (1067.6ms)
+Completed 200 OK in 1205ms (Views: 1100.0ms | ActiveRecord: 47.7ms)
+
+
+Started GET "/assets/active_admin.self-74e4706f74a58d0b465b73ce87685e26aa63c1b51d4975085fccb9cdf878668d.css?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery-ui/datepicker.self-6267be6d4d0f0e8665be3b4d6ac07f40ba23a32aff8eaa5d1bfc00f76a9eeae7.js?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery-ui/button.self-4d4f21ba77bbf8cc08ae65e2b6329a7a1b952b32c3ba7bffca8313e7e8c93d0c.js?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery-ui/draggable.self-debcca3d0d5d9afe2fe91a6fd1aebdb41ca0a55f2f6017352e6c02b6d8a6e64c.js?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery-ui/resizable.self-60b870565f3cd62982c1907828119bb51f42ec8228d5e23868153edc3abc685c.js?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery-ui/dialog.self-5a6c7980dfa3f6b74445b0f4b20eed799ee65363163500ed7f032e603d6b022d.js?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for ::1 at 2015-08-03 09:32:37 +0900
+
+
+Started GET "/assets/jquery-ui/tabs.self-dc07b44bf1b926c8d28ccd2658e30933881e5329348caf70cf305c3943f6bbd7.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/base.self-ab2cb3098b53fe7d229937d768d701e8f4013f2a5aea7988d8f2149fa40426db.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/lib/batch_actions.self-10ee4c07784b00259ca97a02c4e7fb53c1b27ebe5653a3b910426b4ea0941250.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.self-ffdc88fc1b3b6bcfac3e314f191fc486175ab5a4b5daab87af6bd208cb483bd8.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.self-161387c54d1640bd9f174301b77d73ea88ce6d7daf0d7356bd50b4d0143d1b72.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/lib/flash.self-8f05a5d9328ea28fca100b057787fbfb567986513c5f1735ea48fad8f9571c10.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/lib/has_many.self-ece319debdc01ca5096ae8ac6c130ffc0decab382543b4b94e18591375d3d3bb.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.self-0e86d9de4b99cb242de337a342f957f4872f686afc40f31f32d855672b1cd878.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/lib/per_page.self-d7697643296439a8f6aadbf22a229d8ce9b4e8e530ca854164398141006bcfda.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.self-f5200d732ec9ffd4ee8fd1fe11524ad7b54a67f6c0ef447a29d119ece2dcecdb.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.self-f96f2ec2a32c4bc4da4292cc74bddeca0bb223d81a421c98c4d613632860945e.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/ext/jquery.self-da8dafbbe883092bcae73f35a8caf4ae6170fe7d8130ae7039a233f9b509c757.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/application.self-50ffc9f86e474cd52ffb7ce3b3572255ad6646ea17097a056f330b540eae402c.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/print.self-a89a5f3d4e4de963bebe09c9106e5f3192c66f828421dc136cfad24760418340.css?body=1" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/assets/active_admin/orderable-29374dbb55b0012d78a37c614d573bb3474f0779849b478a147d0f1845ca6617.png" for ::1 at 2015-08-03 09:32:38 +0900
+
+
+Started GET "/admin/templates/1" for ::1 at 2015-08-03 09:35:54 +0900
+Processing by Admin::TemplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.9ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mTemplate Load (0.6ms)[0m  [1mSELECT  `templates`.* FROM `templates` WHERE `templates`.`id` = 1 LIMIT 1[0m
+  [1m[35m (6.2ms)[0m  SELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Template' AND `active_admin_comments`.`resource_id` = '1' AND `active_admin_comments`.`namespace` = 'admin'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Template' AND `active_admin_comments`.`resource_id` = '1' AND `active_admin_comments`.`namespace` = 'admin'[0m  [["resource_type", "Template"], ["resource_id", "1"], ["namespace", "admin"]]
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/show.html.arb (505.0ms)
+Completed 200 OK in 594ms (Views: 530.1ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/admin/templates/1/edit" for ::1 at 2015-08-03 09:36:00 +0900
+Processing by Admin::TemplatesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mTemplate Load (0.4ms)[0m  [1mSELECT  `templates`.* FROM `templates` WHERE `templates`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `templates`.* FROM `templates` WHERE `templates`.`id` = 1 LIMIT 1  [["id", "1"]]
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/edit.html.arb (320.3ms)
+Completed 200 OK in 356ms (Views: 350.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/templates/1" for ::1 at 2015-08-03 09:36:13 +0900
+Processing by Admin::TemplatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mTemplate Load (0.3ms)[0m  SELECT  `templates`.* FROM `templates` WHERE `templates`.`id` = 1 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Template' AND `active_admin_comments`.`resource_id` = '1' AND `active_admin_comments`.`namespace` = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Template' AND `active_admin_comments`.`resource_id` = '1' AND `active_admin_comments`.`namespace` = 'admin'  [["resource_type", "Template"], ["resource_id", "1"], ["namespace", "admin"]]
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/show.html.arb (499.9ms)
+Completed 200 OK in 520ms (Views: 513.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/templates" for ::1 at 2015-08-03 09:37:27 +0900
+Processing by Admin::TemplatesController#index as HTML
+  [1m[36mUser Load (6.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `templates`
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mTemplate Load (0.4ms)[0m  SELECT  `templates`.* FROM `templates`  ORDER BY `templates`.`id` desc LIMIT 30 OFFSET 0
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/index.html.arb (646.1ms)
+Completed 200 OK in 725ms (Views: 671.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/admin/templates/new" for ::1 at 2015-08-03 09:37:42 +0900
+Processing by Admin::TemplatesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/new.html.arb (259.4ms)
+Completed 200 OK in 286ms (Views: 280.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/templates" for ::1 at 2015-08-03 09:37:51 +0900
+Processing by Admin::TemplatesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (2.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `templates`[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mTemplate Load (0.4ms)[0m  [1mSELECT  `templates`.* FROM `templates`  ORDER BY `templates`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/index.html.arb (315.6ms)
+Completed 200 OK in 334ms (Views: 326.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/admin/templates/new" for ::1 at 2015-08-03 09:37:59 +0900
+Processing by Admin::TemplatesController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/new.html.arb (464.1ms)
+Completed 200 OK in 486ms (Views: 480.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/admin/templates" for ::1 at 2015-08-03 09:38:20 +0900
+Processing by Admin::TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KNywgF4JXY1h2Hcf9h9PFDBiYWckZKSg8yCIRxIe5y57nDO1rKlpP+HsXlSH7VZTDVxF7mSy0n59AbpBbHogWg==", "template"=>{"name"=>"name2", "title"=>"title2", "text"=>"text2"}, "commit"=>"Create Template"}
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.8ms)
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  vendor/bundle/ruby/2.2.0/gems/activemodel-4.2.3/lib/active_model/forbidden_attributes_protection.rb:21:in `sanitize_for_mass_assignment'
+  vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.3/lib/active_record/attribute_assignment.rb:33:in `assign_attributes'
+  vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.3/lib/active_record/core.rb:564:in `init_attributes'
+  vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.3/lib/active_record/core.rb:281:in `initialize'
+  vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+  vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.3/lib/active_record/inheritance.rb:61:in `new'
+  vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/lib/active_admin/resource_controller/data_access.rb:138:in `build_new_resource'
+  vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/lib/active_admin/resource_controller/data_access.rb:121:in `build_resource'
+  vendor/bundle/ruby/2.2.0/gems/inherited_resources-1.6.0/lib/inherited_resources/actions.rb:31:in `create'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/abstract_controller/base.rb:198:in `process_action'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:115:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:115:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:503:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:503:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `block in instrument'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/notifications.rb:164:in `instrument'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/abstract_controller/base.rb:137:in `process'
+  vendor/bundle/ruby/2.2.0/gems/actionview-4.2.3/lib/action_view/rendering.rb:30:in `process'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_controller/metal.rb:196:in `dispatch'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_controller/metal.rb:237:in `block in action'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:76:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/journey/router.rb:30:in `each'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/journey/router.rb:30:in `serve'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/routing/route_set.rb:821:in `call'
+  vendor/bundle/ruby/2.2.0/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/ruby/2.2.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/conditionalget.rb:38:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/flash.rb:260:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.3/lib/active_record/query_cache.rb:36:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activerecord-4.2.3/lib/active_record/migration.rb:377:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:84:in `run_callbacks'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/request_store-1.2.0/lib/request_store/middleware.rb:8:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/todamasato/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/todamasato/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/todamasato/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (192.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (99.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (244.2ms)
+
+
+Started GET "/admin/templates" for ::1 at 2015-08-03 09:38:38 +0900
+Processing by Admin::TemplatesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `templates`[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mTemplate Load (0.4ms)[0m  [1mSELECT  `templates`.* FROM `templates`  ORDER BY `templates`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/index.html.arb (410.0ms)
+Completed 200 OK in 449ms (Views: 436.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/templates/new" for ::1 at 2015-08-03 09:48:37 +0900
+  [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Processing by Admin::TemplatesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/new.html.arb (734.6ms)
+Completed 200 OK in 794ms (Views: 757.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/templates" for ::1 at 2015-08-03 10:22:15 +0900
+Processing by Admin::TemplatesController#index as HTML
+  [1m[35mUser Load (7.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM `templates`[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mTemplate Load (13.4ms)[0m  [1mSELECT  `templates`.* FROM `templates`  ORDER BY `templates`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/index.html.arb (685.4ms)
+Completed 200 OK in 914ms (Views: 753.9ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/admin/templates/test" for ::1 at 2015-08-03 10:30:52 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::TemplatesController#test as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered text template (0.0ms)
+Completed 200 OK in 90ms (Views: 9.9ms | ActiveRecord: 40.8ms)
+
+
+Started GET "/admin/template/test" for ::1 at 2015-08-03 10:31:46 +0900
+
+ActionController::RoutingError (No route matches [GET] "/admin/template/test"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/request_store-1.2.0/lib/request_store/middleware.rb:8:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/todamasato/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/todamasato/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/todamasato/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.3ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (201.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (94.4ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (213.8ms)
+
+
+Started GET "/admin/template" for ::1 at 2015-08-03 10:32:46 +0900
+
+ActionController::RoutingError (No route matches [GET] "/admin/template"):
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.2.0/gems/request_store-1.2.0/lib/request_store/middleware.rb:8:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.2.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.2.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/todamasato/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/todamasato/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/todamasato/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (153.1ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (96.8ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered vendor/bundle/ruby/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (204.9ms)
+
+
+Started GET "/admin" for ::1 at 2015-08-03 10:32:54 +0900
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/page/index.html.arb (880.5ms)
+Completed 200 OK in 966ms (Views: 891.1ms | ActiveRecord: 32.2ms)
+
+
+Started GET "/admin/templates" for ::1 at 2015-08-03 10:32:58 +0900
+Processing by Admin::TemplatesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `templates`[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `templates` LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mTemplate Load (0.4ms)[0m  [1mSELECT  `templates`.* FROM `templates`  ORDER BY `templates`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered vendor/bundle/ruby/2.2.0/bundler/gems/activeadmin-0042ffb2670b/app/views/active_admin/resource/index.html.arb (366.7ms)
+Completed 200 OK in 434ms (Views: 380.8ms | ActiveRecord: 26.8ms)
+
+
+Started GET "/admin/templates/test" for ::1 at 2015-08-03 10:33:23 +0900
+Processing by Admin::TemplatesController#test as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered text template (0.1ms)
+Completed 200 OK in 90ms (Views: 6.3ms | ActiveRecord: 27.6ms)

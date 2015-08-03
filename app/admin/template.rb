@@ -1,4 +1,7 @@
 ActiveAdmin.register Template do
+  collection_action :test, :method => :get do
+    render :text => "app/admin/template/test 表示成功"
+  end
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
